@@ -17,7 +17,7 @@
 
 ## 1. Introducción
 
-La programación funcional es un paradigma de programación que trata de construir programas mediante el uso de funciones puras, evitando el estado compartido, los efectos secundarios y los datos mutables. Es una forma declarativa de programar que se enfoca en el **"qué"** en lugar del **"cómo"**.
+La programación funcional es un paradigma de programación que trata de construir programas mediante el uso de funciones puras, evitando el estado compartido, los efectos secundarios y los datos mutables. Es una forma declarativa de programar que se enfoca en el **"qué"** en lugar del **"cómo"**. (Enfoque más imperativo)
 
 🚀 **Características clave**:
 - Uso extensivo de funciones.
