@@ -17,7 +17,7 @@
 
 ## 1. Introducción
 
-La programación funcional es un paradigma de programación que trata de construir programas mediante el uso de funciones puras, evitando el estado compartido, los efectos secundarios y los datos mutables. Es una forma declarativa de programar que se enfoca en el **"qué"** en lugar del **"cómo"**. (Enfoque más imperativo)
+La programación funcional es un paradigma de programación que trata de construir programas mediante el uso de funciones puras, evitando el estado compartido, los efectos secundarios y los datos mutables. Es una forma declarativa de programar que se enfoca en el **"qué"** en lugar del **"cómo"**.
 
 🚀 **Características clave**:
 - Uso extensivo de funciones.
@@ -41,11 +41,16 @@ Esto: (x, y) = x + y es igual a esto: (a, b) = a + b
 
 📌 **Función**: Una función es una relación entre una entrada y una salida donde cada entrada tiene exactamente una salida.
 
+![Batidora](https://jorgebenitezlopez.com/tiddlywiki/pro/batidora.png)
+
 📌 **Función pura**: No tiene efectos secundarios y siempre produce el mismo resultado para las mismas entradas.
 
 📌 **Efectos secundarios**: Cambios en el estado externo o cualquier acción que ocurra fuera de la función, como modificar variables globales, escribir en un archivo o mostrar algo en pantalla.
 
-📌 **Inmutabilidad**: Los datos no cambian. En lugar de modificar una estructura de datos, se crea una nueva.
+📌 **Inmutabilidad**: Los datos no cambian. En lugar de modificar una estructura de datos, se crea una nueva. 
+
+> [!WARNING]
+> Por ejemplo, cuando analicemos y limpiemos datos, es importante trabajar sobre una copia de los datos, no sobre el archivo original
 
 ---
 
@@ -100,6 +105,9 @@ print(doubled)  # [2, 4, 6]
 print(arr)      # [1, 2, 3] (sin cambios)
 ```
 
+> [!WARNING]
+> map toma una función y una colección (lista, tupla, etc.) por lo que es una función de orden superior y devuelve un nuevo iterable, lo que es una característica clave de la programación funcional (Inmutabilidad)
+
 🚨 ¿Cómo sería algo mutable? 🚨
 
 ```python
@@ -128,14 +136,6 @@ def composed(x):
 
 print(composed(5))  # 12
 
-# Composición con Lambda
-
-add = lambda x: x + 1
-multiply = lambda x: x * 2
-
-composed = lambda x: multiply(add(x))
-
-print(composed(5))  #
 ```
 
 ## 7. Uso de Funciones de Orden Superior
@@ -149,6 +149,9 @@ def filter_even(numbers):
 
 print(filter_even([1, 2, 3, 4, 5]))  # [2, 4]
 ```
+
+> [!WARNING]
+> Función lambda (muy parecida a arrow function de JS). Útil cuando se necesita una función rápida y sencilla sin declararla explícitamente.
 
 ## 8. Ejemplo Completo en Python
 
@@ -189,7 +192,7 @@ La programación funcional ofrece numerosos beneficios, pero también presenta c
    - La inmutabilidad evita errores relacionados con el estado mutable y los efectos colaterales. Además facilita la prueba (testing) del código
 
 4. **Soporte para paralelismo**:
-   - Dado que no hay datos mutables ni estado compartido, es más seguro ejecutar tareas en paralelo.
+   - Dado que no hay datos mutables ni estado compartido, es más seguro ejecutar tareas en paralelo. 
 
 5. **Declaratividad**:
    - El enfoque declarativo permite centrarse en el **qué** hacer, en lugar de **cómo** hacerlo, lo que mejora la legibilidad del código.
@@ -243,7 +246,7 @@ Si quieres profundizar en la programación funcional, aquí tienes algunos recur
 
 ---
 
-### Proyectos Prácticos
+### Proyectos Práctico
 
 1. **Procesamiento de texto**:
    - Realiza transformaciones funcionales como convertir palabras a mayúsculas, contar frecuencias y filtrar palabras clave siguiendo el paradigma funcional
@@ -251,4 +254,3 @@ Si quieres profundizar en la programación funcional, aquí tienes algunos recur
 2. **Transformación de datos JSON**:
    - Aplica funciones puras para filtrar y mapear datos de archivos JSON siguiendo el paradigma funcional
 
-Estos recursos te ayudarán a dominar la programación funcional y aplicarla de manera efectiva en tus proyectos 
