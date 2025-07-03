@@ -150,6 +150,8 @@ def filter_even(numbers):
 print(filter_even([1, 2, 3, 4, 5]))  # [2, 4]
 ```
 
+Filter es quien hace el trabajo de orden superior, porque acepta otra función (el lambda) como argumento.
+
 > [!WARNING]
 > Función lambda (muy parecida a arrow function de JS). Útil cuando se necesita una función rápida y sencilla sin declararla explícitamente.
 
