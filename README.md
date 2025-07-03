@@ -219,8 +219,7 @@ La programación funcional ofrece numerosos beneficios, pero también presenta c
 
 La programación funcional es ideal para resolver problemas de manera modular y escalable, especialmente en entornos donde la inmutabilidad y la ausencia de efectos secundarios son críticas. Sin embargo, puede no ser la mejor elección en contextos que requieren un enfoque imperativo o altamente optimizado para rendimiento.
 
-🚨 ¿Qué es la progrtamación imperativa? 🚨
-
+🚨 ¿Qué es la programación imperativa? 🚨
 
 ## 10. Recursos Adicionales
 
