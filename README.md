@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://jorgebenitezlopez.com/tiddlywiki/pro/memefunction.jpg" alt="Código fuente" style="border:1px solid grey; width: 100%; max-width: 100%;">
+</p>
+
 # Programación Funcional
 
 ## Índice
