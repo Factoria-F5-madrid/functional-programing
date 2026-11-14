@@ -30,14 +30,7 @@ La programación funcional es un paradigma de programación que trata de constru
 
 📖 **Historia**: Inspirada en el cálculo lambda desarrollado por Alonzo Church (director de Alan Turing) en la década de 1930, la programación funcional ha influido en lenguajes modernos como Haskell, Lisp, Scala, JavaScript, Python, y otros.
 
-```
-El nombre de las funciones no importa, solo importa lo que hacen
-Esto: suma(x, y) = x + y es igual a esto: (x, y) = x + y
-
-En el cálculo lambda, los nombres de las variables son simbólicos y no afectan el significado de la función. Lo importante es cómo se utilizan.
-
-Esto: (x, y) = x + y es igual a esto: (a, b) = a + b
-```
+Para profundizar en estas ideas con ejemplos sencillos en Python, consulta la [guía de cálculo lambda](./calculo-lambda.md).
 
 ---
 
