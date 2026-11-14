@@ -110,7 +110,7 @@ print(arr)      # [1, 2, 3] (sin cambios)
 ```
 
 > [!WARNING]
-> map toma una función y una colección (lista, tupla, etc.) por lo que es una función de orden superior y devuelve un nuevo iterable, lo que es una característica clave de la programación funcional (Inmutabilidad)
+> map recibe una función y una colección, y devuelve un iterador con los resultados. En este ejemplo, no modifica arr; list(...) convierte los resultados en una lista nueva. Esa lista nueva sí es mutable. Por tanto, el ejemplo muestra que se conserva la lista original, no que map garantice inmutabilidad.
 
 🚨 ¿Cómo sería algo mutable? 🚨
 
@@ -224,8 +224,6 @@ La programación funcional ofrece numerosos beneficios, pero también presenta c
 ### Resumen
 
 La programación funcional es ideal para resolver problemas de manera modular y escalable, especialmente en entornos donde la inmutabilidad y la ausencia de efectos secundarios son críticas. Sin embargo, puede no ser la mejor elección en contextos que requieren un enfoque imperativo o altamente optimizado para rendimiento.
-
-🚨 ¿Qué es la programación imperativa? 🚨
 
 ## 10. Recursos Adicionales
 
